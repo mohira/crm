@@ -1,0 +1,43 @@
+<div class="vcard-detail">
+  <div class="vcard-name">
+    <%= image_tag @customer.image_url, class: "vcard-image" %>
+    <h3>
+      <%= image_tag @customer.company.image_url, class: "vcard-company-image" %>
+      <b><%= @customer.full_name %></b>
+    </h3>
+    <p class="vcard-email">
+      <span class="glyphicon glyphicon-send"></span>
+      <span class="v-baseline"><%= @customer.email %></span>
+    </p>
+  </div>
+
+  <div class="vcard-action clearfix">
+    <%= link_to 'Edit Profile', edit_customer_path(@customer) %>
+    <%= link_to 'Delete Profile', edit_customer_path(@customer), method: :delete %>
+  </div>
+  <p class="vcard-time">
+    <span class="glyphicon glyphicon-time"></span>
+    <span class="v-baseline">Added on <%= @customer.created_at.strftime("%d") %> <%= @customer.created_at.strftime("%b %Y") %></span>
+  </p>
+
+  <div class="vcard-stats clearfix">
+    <div class="col-lg-4">
+      <div class="vcard-stat text-center">
+        <strong class="vcard-stat-count">100</strong>
+        <span class="vcard-stat-desc text-gray"><small>Contracts</small></span>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="vcard-stat text-center">
+        <strong class="vcard-stat-count"><%= @customer.comments.count %></strong>
+        <span class="vcard-stat-desc text-gray"><small>Comments</small></span>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="vcard-stat text-center">
+        <strong class="vcard-stat-count">300</strong>
+        <span class="vcard-stat-desc text-gray"><small>Followers</small></span>
+      </div>
+    </div>
+  </div>
+</div>

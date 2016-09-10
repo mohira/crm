@@ -1,0 +1,63 @@
+$light_gray: #DDD;
+
+.vcard-detail {
+  .vcard-image {
+    width: 100%;
+    border-radius: 5%;
+  }
+  .vcard-name {
+    h3 {
+      padding: 0 0 5px 0;
+    }
+    .vcard-company-image {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      border-radius: 5%;
+      margin-right: 10px;
+    }
+    .vcard-email {
+      margin-bottom: 10px;
+      .glyphicon-send {
+        margin-right: 10px;
+      }
+    }
+  }
+  .vcard-action {
+    a {
+     margin-right: 20px;
+    }
+  }
+  .vcard-time {
+    border-top: 1px solid $light_gray;
+    border-bottom: 1px solid $light_gray;
+    margin-top: 10px;
+    padding: 10px 0;
+    .glyphicon-time {
+      margin-right: 10px;
+    }
+  }
+  .vcard-stats {
+    padding-bottom: 10px;
+    border-bottom: 1px solid $light_gray;
+
+    .vcard-stat {
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .vcard-stat-count {
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 1;
+      color: #4078C0;
+
+      .vcard-stat-desc {
+        font-size: 10px;
+      }
+    }
+  }
+  .vcard-company {
+    margin-top: 10px;
+  }
+}
