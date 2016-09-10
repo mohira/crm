@@ -1,6 +1,21 @@
-Company.create(name: "YES高須クリニック", url: "http://www.takasu.co.jp/", address: "東京都港区赤坂2-14-27")
-Company.create(name: "株式会社ノーウォール", url: "http://nowall.co.jp/", address: "東京都新宿区西新宿6-15-1")
-Company.create(name: "ヤフー株式会社", url: "http://www.yahoo.co.jp/", address: "東京都港区赤坂9-7-1")
+Company.create(
+  name: "Google",
+  url: "http://www.google.co.jp/",
+  address: "東京都港区赤坂2-14-27",
+  image_url: "http://images.dailytech.com/nimage/G_is_For_Google_New_Logo_Thumb.png"
+  )
+Company.create(
+  name: "Apple",
+  url: "http://www.apple.co.jp/",
+  address: "東京都新宿区西新宿6-15-1",
+  image_url: "http://kaorich.com/wp/wp-content/uploads/2014/02/slooProImg_20140202085402.jpg"
+  )
+Company.create(
+  name: "Amazon",
+  url: "http://www.amazon.co.jp/",
+  address: "東京都港区赤坂9-7-1",
+  image_url: "http://cdn-img.easyicon.net/png/11342/1134224.gif"
+  )
 
 Post.create(position_name: "社長")
 Post.create(position_name: "部長")
