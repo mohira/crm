@@ -1,0 +1,28 @@
+.comment-form {
+  border-radius: 5px;
+  padding: 5px;
+  .user-image {
+    float: left;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 5%;
+      margin-right: 10px;
+    }
+  }
+  .comment-box {
+    textarea {
+      width: 90%;
+      height: 100px;
+      border: 1px solid $faint_blue;
+    }
+    button {
+      float: right;
+      border: 1px solid $faint_blue;
+      .glyphicon-pencil {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+}
