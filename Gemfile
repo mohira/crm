@@ -18,6 +18,8 @@ gem 'kaminari'
 
 group :development, :test do
   gem 'byebug'
+  gem 'faker'
+  gem 'faker-japanese'
 end
 
 group :development do
