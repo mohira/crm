@@ -1,0 +1,18 @@
+<h2>対応履歴</h2>
+
+<% @comments.each do |comment| %>
+  <ul class="cbp_tmtimeline comments">
+    <li>
+      <time class="cbp_tmtime" datetime="2013-04-10 18:30">
+        <span><%= comment.created_at.strftime("%Y-%m-%d") %></span>
+        <span><%= comment.created_at.strftime("%H:%M") %></span>
+      </time>
+      <%= image_tag comment.user.image_url, class: "cbp_tmicon" %>
+      <div class="cbp_tmlabel">
+        <h2><%= comment.user.full_name %></h2>
+        <p><%= comment.body %></p>
+        <p class="text-right"><%= link_to "削除", comment_path(comment), method: :delete %></p>
+      </div>
+    </li>
+  </ul>
+<% end %>
