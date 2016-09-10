@@ -24,6 +24,7 @@ end
     given_name: Faker::Japanese::Name.first_name,
     email: "customer_#{index}@sparta.com",
     company_id: rand(3) + 1,
-    post_id: rand(4) + 1
+    post_id: rand(4) + 1,
+    image_url: "http://www.hachimantaishi.com/shokokai/taira/gallery/gallery/63.jpg"
   )
 end
