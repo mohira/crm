@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'better_errors'
 gem 'kaminari'
+gem 'ransack'
 
 group :development, :test do
   gem 'byebug'
