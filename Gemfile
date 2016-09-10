@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'better_errors'
 gem 'kaminari'
 gem 'ransack'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
