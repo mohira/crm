@@ -9,6 +9,8 @@ class CustomersController < ApplicationController
 
   def show
     @comment = Comment.new
+    # @comments = Comment.where(customer_id: @customer.id)
+    @comments = @customer.comments
   end
 
   def new
