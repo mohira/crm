@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160910102047) do
+ActiveRecord::Schema.define(version: 20160910120912) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "body"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160910102047) do
     t.datetime "updated_at",  null: false
     t.integer  "company_id"
     t.integer  "post_id"
+    t.text     "image_url"
   end
 
   add_index "customers", ["company_id"], name: "index_customers_on_company_id"
