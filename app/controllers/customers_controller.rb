@@ -33,6 +33,10 @@ class CustomersController < ApplicationController
   end
 
   def destroy
+    render :new
+    @customer = Customer.find(params[:id])
+    @customer.destroy
+    # redirect_to customers_url
   end
 
   private
